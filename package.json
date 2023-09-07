@@ -1,0 +1,23 @@
+{
+  "name": "webcamtest",
+  "version": "1.0.0",
+  "description": "Testing of webcamera and Mic using cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webcamTest": "cypress run --spec cypress\\e2e\\webcamTest.cy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MotghareChetan/webcamTest.git"
+  },
+  "author": "Chetan Motghare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MotghareChetan/webcamTest/issues"
+  },
+  "homepage": "https://github.com/MotghareChetan/webcamTest#readme",
+  "dependencies": {
+    "cypress": "^13.1.0"
+  }
+}
