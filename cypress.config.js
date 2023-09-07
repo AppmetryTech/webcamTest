@@ -21,6 +21,27 @@ module.exports = defineConfig({
       })
     },
     experimentalStudio: true,
-    video: true
+    video: true,
+    /* screenshotsFolder: "cypress/results/mochawesome-report/assets",
+     reporter: "mochawesome",
+     reporterOptions: {
+       reportDir: "cypress/results",
+       overwrite: false,
+       html: true,
+       json: true
+     }*/
+    screenshotsFolder: "cypress/reports/mochareports/assets",
+    reporter: "cypress-multi-reporters",
+    reporterOptions: {
+      reporterEnabled: "mochawesome",
+      mochawesomeReporterOptions: {
+        reportDir: "cypress/reports/mocha",
+        charts: true,
+        quite: true,
+        overwrite: false,
+        html: true,
+        json: true
+      }
+    },
   },
 });
